@@ -1,6 +1,14 @@
 /**
+* PORTUGOL (http://lite.acad.univali.br/portugol)
+* "linguagem de programação" simples e didática, escrita em português.
+*
+* Portugol WebStudio (https://portugol-webstudio.cubos.io)
+* um editor de texto gratuito direto no navegador para escrever e executar programa
+*/
+
+/**
  * PROGRAMA 
- * sequencia de passos, escrito em linguagem de programação (Portugol)
+ * sequencia de instruções executadas passo a passo
  */
 programa {
 
@@ -10,54 +18,54 @@ programa {
 	 */
 	funcao inicio() {
 		/**
-		 * ESCREVA (saída)
+		 * ESCREVA
 		 * passo para mostrar texto (entre aspas duplas) ao usuário
 		 */
 		escreva("Olá, qual seu nome? ")
 
 		/**
-		 * MEMÓRIA COMPUTADOR
-		 * um armário com várias gavetas, compartilhado entre os programas, 
-		 * para armazenar informações etiquetadas
+		 * MEMÓRIA DO COMPUTADOR
+		 * Imagine um armário com várias gavetas, onde cada gaveta 
+		 * possui uma etiqueta e apenas um valor armazenado
 		*/
 		
 		/**
-		 * VARIÁVEL (memória)
-		 * etiqueta da gaveta (espaço na memória) que guarda a resposta do usuário
-		 * 1. toda gaveta tem um tipo (Ex: cadeia)
-		 * 2. toda gaveta tem uma etiqueta (Ex: nome)
+		 * VARIÁVEL
+		 * etiqueta da gaveta, chave de um espaço na memória que guarda a resposta do usuário, 
+		 * para reservar um espaço informe o tipo e o identificador da informação
 		 */		 				
 		cadeia nome
 
 		/**
-		 * LEIA (entrada)
-		 * passo para ler a resposta do usuário e engavetar no armário (memória)
+		 * LEIA
+		 * passo para ler a resposta do usuário e armazenar na memória
 		 */
 		leia(nome)
 
 		/**
 		 * ATRIBUIÇÃO (=)
-		 * dar um valor a uma informação/variável
+		 * defini o valor a uma variável
 		 */
 		inteiro anoAtual = 2020
 
-		// podemos juntar a escrita de vários textos separando-os com virgulas (,)
+		// podemos juntar a escrita de vários textos, separando-os com virgulas (,)
 		escreva(nome, " em que ano você nasceu? ")		
 
 		/**
-		 * INTEIRO (dados)
-		 * tipo de informação para representar números
+		 * INTEIRO
+		 * tipo de informação para representar números não decimais
 		 */
 		inteiro anoNascimento
 		leia(anoNascimento)
 
 		/**
-		 * EXPRESSÕES NUMÉRICAS (processamento)
-		 * operações matemáticas usando símbolos:
-		 * + Adição (Ex: 1 + 2)
-		 * - Subtração (Ex: 4 - 3)
-		 * * Multiplicação (Ex: 5 * 6)
-		 * / Divisão (Ex: 7 / 8)
+		 * EXPRESSÕES NUMÉRICAS
+		 * operações matemáticas usando símbolos
+		 * - Subtração
+		 * + Adição
+		 * * Multiplicação
+		 * / Divisão
+		 * % Resto
 		 */
 		inteiro idade = anoAtual - anoNascimento
 
@@ -66,7 +74,7 @@ programa {
 	} // fim do programa
 
 	/**
-	 * Acesse a wiki para aprender mais
+	 * Acesse a wiki para mais detalhes
 	 * https://github.com/jamesgsilva/fundamentos-programacao/wiki/primeiro-programa
 	 */
 }
