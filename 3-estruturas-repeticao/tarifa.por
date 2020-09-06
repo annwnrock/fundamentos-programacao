@@ -15,7 +15,7 @@ programa {
 			se (destino == "N") { 
 				escreva("Tarifa Nacional é ", 3.99) // 3.1 SE FOR "N" MOSTRE A TARIFA 3.99
 			} senao {
-				escreva("Tarifa Internacional é ", 3.99) //3.2 SE FOR "I" MOSTRE A TARIFA 9.78 
+				escreva("Tarifa Internacional é ", 9.78) //3.2 SE FOR "I" MOSTRE A TARIFA 9.78 
 			}
 	
 			//4. PERGUNTE SE TEM MAIS PASSAGEIROS
@@ -33,7 +33,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 678; 
+ * @POSICAO-CURSOR = 404; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
