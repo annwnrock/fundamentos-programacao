@@ -207,3 +207,22 @@ lógicas A e B.
 | falso      | verdadeiro | verdadeiro | falso      | verdadeiro | falso      |
 | verdadeiro | falso      | falso      | verdadeiro | verdadeiro | falso      |
 | verdadeiro | verdadeiro | falso      | falso      | verdadeiro | verdadeiro |
+
+### Estrutura de repetição
+
+A instrução `enquanto` é utilizada quando se deseja repetir um
+certo trecho de instruções por um determinado número de vezes.
+
+A execução se dá enquanto uma condição for `verdadeiro`, e no momento que for `falso` o processamento é desviado para fora do bloco de repetição.
+
+```portugol
+funcao inicio () {  
+    cadeia pediuAConta = "N"
+    enquanto (pediuAConta == "N") {
+        // instruções...
+        escreva("Pedir a conta (S)im ou (N)ão? ")
+        leia(pediuAConta)
+    }
+    escreva("TOTAL: R$ xxx")
+}
+```

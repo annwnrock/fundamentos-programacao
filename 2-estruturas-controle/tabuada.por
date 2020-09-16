@@ -1,27 +1,21 @@
 programa {
 	
 	funcao inicio() {
-		// 1 PERGUNTE UM NUMERO
 		escreva("Digite um numero: ")
-		
-		// 2 PASSO LEIA UM NUMERO
 		inteiro numero
 		leia(numero)
 
-		inteiro mult = 1
+		inteiro multiplicador = 1
 
-		// 3 MULTIPLIQUE O NUMERO DE 1 ATÉ 10
-		enquanto (mult <= 10) {
-			// 3 MULTIPLIQUE O NUMERO DE 1 ATÉ 10
-			inteiro resultado = numero * mult
-
-			// 4 MOSTRE O RESULTADO DA TABUADA 
-			escreva(numero, " x ", mult, " = ", resultado, "\n")
+		enquanto (multiplicador <= 10) {
+			inteiro resultado = numero * multiplicador
+			escreva(numero, " x ", multiplicador, " = ", resultado, "\n")
 			
-			mult = mult + 1
+			multiplicador = multiplicador + 1
 		}
 		
 	}
+	
 }
 /* $$$ Portugol Studio $$$ 
  * 

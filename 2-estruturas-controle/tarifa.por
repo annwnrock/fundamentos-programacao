@@ -1,32 +1,26 @@
 programa {
 	
 	funcao inicio() {
-		cadeia temMais
+		cadeia temMais = "S"
 		
-		faca {
-			// 1. PERGUNTE O DESTINO DO PASSAGEIRO
-			escreva("Qual seu destino? (N ou I) ")
-	
-			// 2. LEIA O DESTINO DO PASSAGEIRO
+		enquanto(temMais == "S") {
+			escreva("Destino (N)acional ou (I)nternacional? ")
 			cadeia destino
 			leia(destino)
 	
-			// 3. VERFIQUE SE
 			se (destino == "N") { 
-				escreva("Tarifa Nacional é ", 3.99) // 3.1 SE FOR "N" MOSTRE A TARIFA 3.99
+				escreva("Tarifa Nacional é ", 3.99)
 			} senao {
-				escreva("Tarifa Internacional é ", 9.78) //3.2 SE FOR "I" MOSTRE A TARIFA 9.78 
+				escreva("Tarifa Internacional é ", 9.78)
 			}
 	
-			//4. PERGUNTE SE TEM MAIS PASSAGEIROS
 			escreva("Tem mais passageiros? (S ou N) ")
-	
-			// 5. LEIA A RESPOSTA			
 			leia(temMais)
 		
-		// 6. ENQUANTO HOUVER MAIS PASSAGEIROS REPITA O PASSO 1 	
-		} enquanto(temMais == "S") 		
+		}
+
 	}
+
 }
 /* $$$ Portugol Studio $$$ 
  * 
