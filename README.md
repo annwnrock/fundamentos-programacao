@@ -17,8 +17,9 @@ Recomendo o uso do [Portugol WebStudio](https://portugol-webstudio.cubos.io), um
     - [Expressões lógicas](#expressões-lógicas)
     - [Estrutura de decisão](#estrutura-de-decisão)
     - [Operadores Lógicos](#operadores-lógicos)
-1. Vetores e matrizes
-1. Funções
+    - [Estrutura de repetição](#estrutura-de-repetição)
+3. [Vetores](#vetores)
+4. [Funções](#funções)
 
 ## Entrada e saída
 
@@ -226,3 +227,43 @@ funcao inicio () {
     escreva("TOTAL: R$ xxx")
 }
 ```
+
+## Vetores
+
+Um agrupamento de varias informações de um mesmo tipo, que compartilham uma mesma variável, onde cada informação é identificada por um índi­ce que inicia a partir de zero e vai até o total de elementos - 1.
+
+| elemento | 1º | 2º | 3º |
+| :--- | :---:  | :---: | :---: |
+| indice | 0 | 1 | 2 | 3 | 4
+| variavel | notas[0] | notas[1] | notas[2] |
+| valor | 7 | 3 | 5 |
+
+Um vetor é declarado pelo tipo de cada elemento, o nome da variável, e a quantidade máxima de valores entre colchetes.
+
+```portugol
+funcao inicio () {  
+    inteiro notas[3]
+}
+```
+
+Para manipular o valor de um determinado elemento, é necessário indicar o endereço onde o elemento está armazenado.
+
+```portugol
+funcao inicio () {  
+    inteiro notas[3]
+    notas[0] = 7
+    notas[1] = 3
+    notas[2] = 5
+
+    inteiro deslocamento = 0
+    inteiro totalElementos = 3
+    enquanto (deslocamento < totalElementos) {
+        escreva(deslocamento, ") nota ", notas[deslocamento], "\n")
+        deslocamento = deslocamento + 1
+    }
+}
+```
+
+Acessar um elemento com um índice fora dos limites do vetor causará em erro no programa.
+
+## Funções
